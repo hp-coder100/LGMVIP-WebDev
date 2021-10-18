@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+header nav{
+    position: sticky;
+    background-color: #00000050;
+}
+
+header nav .navbar-brand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header nav .navbar-brand span{
+    font-size: 1.3em;
+    color: yellow;
+}
+
+
+header nav .collapse .navbar-nav li a {
+    color: white !important;
+}
+
+
+header nav .collapse .navbar-nav li a:hover {
+    color: yellow !important;
+}
+
+
+header .carousel .carousel-inner .carousel-item {
+    height: 100vh;
+}
+
+
+header .carousel .carousel-inner .carousel-item img {
+    height: 100vh;
+}
+
+
+header .carousel .header-caption {
+    position: absolute;
+    top: 50%;
+    line-height-step: 1em;
+    background-color: #00000030;
+    transform: translateY(-50%);
+    padding: 5%;
+    color: white;
+}
+
+header .carousel .header-caption input {
+    background-color: yellow;
+}
+
+header .carousel .header-caption input:hover {
+    background-color: purple;
+    color: white;
+}
+
+section {
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #66666630;
+    border-bottom: solid 0.5px grey;
+}
+
+.icon-img {
+    transition: 2s ease-in-out;
+    animation: animate 4s none infinite;
+}
+
+.intro {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.home-item {
+    transition: 0.5s ease-in-out;
+    box-shadow: 6px 3px 20px black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.home-item button:hover, .home-item button:active {
+    color: white;
+    background-color: purple;
+    transform: scale(1.1);
+}
+
+.home-item:hover {
+    transform: scale(1.1);
+}
+
+.icon i {
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: purple;
+
+}
+
+.flip-card-inner {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 20px black;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+    padding: 5%;
+}
+
+.flip-card-back {
+    background-color: purple;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 5%;
+}
+
+
+.pricing-item {
+    margin-bottom: 2%;
+    background-color: white;
+    box-shadow: 3px 3px black;
+    padding: 1%;
+
+}
+
+.plans:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    animation: animate 2s alternate infinite;
+}
+
+
+
+section#videos {
+    background-color: lightsteelblue;
+}
+
+.video-item {
+    height: 300px;
+    width: 300px;
+    margin: 2%;
+    background-color: lightgray;
+}
+
+.video-item iframe {
+    width: 280px;
+    height: 250px;
+}
+
+
+.team-item {
+    display: block;
+    height: 180px;
+    width: 180px;
+
+}
+
+.team-item img {
+    display: block;
+}
+
+.contact {
+    position: absolute;
+    height: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: purple;
+    opacity: 0.5;
+    align-items: baseline;
+    color: white;
+    padding: 5% 20%;
+
+}
+
+.card {
+    width: 180px;
+    display: block;
+    box-shadow: 1px 2px 20px black;
+}
+
+.card .img_section {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.card .img_section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card .img_section .img_icons {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.5);
+    border-radius: 50%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    color: whitesmoke;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.card .img_section:hover .img_icons {
+    display: flex;
+    font-size: 1.5em;
+}
+.newsletter{
+    background: url(/images/slides/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+
+.newsletter form {
+    width: 40%;
+    display: block;
+}
+
+.newsletter form input[type="button"]:hover {
+    color: white;
+    background-color: purple;
+}
+
+footer{
+    padding: 2%;
+    background-color: darkslategray;
+    color:white;
+}
+
+/*media screen query for responsive*/
+
+@media screen and (max-width: 992px) {
+
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-item img {
+        height: 60vh;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .carousel-item {
+        height: 40vh;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+
+.newsletter form {
+    width: 90%;
+    display: block;
+}
+
+
+
+
+}
